@@ -34,13 +34,19 @@ const DisplayAll = () => {
                         {products.map((product, index) => {
                             return (
                                 <tr key={index}>
-                                    <th scope="row">{product.title}</th>
+                                    <td>
+                                        <Link to={`/product/${product._id}`}>
+                                            {product.title}
+                                        </Link>
+                                    </td>
                                     <td>{product.price}</td>
                                     <td>{product.description}</td>
                                     <td>
                                         <button>Edit</button>
                                         <button>Delete</button>
-                                        <button>View</button>
+                                        <Link to={`/product/${product._id}`}>
+                                            <button>View</button>
+                                        </Link>
                                     </td>
                                 </tr>
                             )
@@ -49,46 +55,6 @@ const DisplayAll = () => {
                 </table>
             </div>
         </div>
-
-
-
-    // <div>
-    //   <table class="table">
-    //     <thead>
-    //       <tr>
-    //         <th scope="col">Name</th>
-    //         <th scope="col">Cuisine</th>
-    //         <th scope="col">Dish Image</th>
-    //         <th scope="col">Actions</th>
-    //       </tr>
-    //     </thead>
-    //     <tbody>
-    //       {restaurants.map((restaurant, index) => {
-    //         {
-    //           console.log(restaurant);
-    //         }
-    //         return (
-    //           <tr key={index}>
-    //             <th scope="row">{restaurant.name}</th>
-    //             <td>{restaurant.cuisine}</td>
-    //             <td>{restaurant.dishImg}</td>
-    //             <td>
-    //               <button onClick={() => onHandleDelete(restaurant._id, index)}>
-    //                 Delete
-    //               </button>
-    //               <button>
-    //                 <Link to={`/restaurant/${restaurant._id}/edit`}>Edit</Link>
-    //               </button>
-    //               <Link to={`/restaurant/${restaurant._id}`}>details</Link>
-    //             </td>
-    //           </tr>
-    //         );
-    //       })}
-    //     </tbody>
-    //   </table>
-    // </div>
-
-
     )
 }
 
