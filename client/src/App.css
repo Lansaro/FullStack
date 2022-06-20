@@ -35,33 +35,33 @@
 
 .App-body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.App-body>form {
+.App-Form>form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 600px;
-  height: 400px;
+  width: 550px;
+  height: 275px;
   margin: 20px auto;
   border: 2px solid white;
   border-radius: 20px;
   color: white;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.App-body>form>h2 {
+.App-Form>form>h2 {
   margin: 10px auto;
 }
 
-.App-body>form>div {
+.App-Form>form>div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 80%;
   height: 50px;
   margin: 0px auto;
   font-weight: bold;
@@ -75,17 +75,30 @@
   color: red;
 } */
 
-.App-body>form>div>input {
+.App-Form>form>div>input {
   width: 275px;
-  height: 30px;
-  font-size: calc(5px + 2vmin);
+  height: 20px;
+  font-size: calc(3px + 2vmin);
 }
 
-.App-body>form>button {
+.App-Form>form>button {
   width: 150px;
-  height: 45px;
+  height: 35px;
   margin: 10px auto;
   border-radius: 5px;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
   font-weight: bold;
+}
+
+.App-Records {
+  margin: 10px auto;
+  width: 75%;
+}
+
+.App-Records>table {
+  width: 100%;
+}
+
+.App-Records>table>* {
+  margin: 10px;
 }

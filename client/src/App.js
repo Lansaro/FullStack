@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ProductForm from './components/ProductForm';
+import DisplayAll from './components/DisplayAll';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         </header>
         <div className="App-body">
           <Routes>
-            <Route path="/" element={<ProductForm />} />
+            <Route path="/" element={<DisplayAll />} />
           </Routes>
         </div>
       </div>
