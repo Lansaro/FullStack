@@ -1,9 +1,9 @@
-.App {
-  text-align: center;
+* {
+  font-family: San Francisco;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -13,26 +13,192 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: calc(3px + 2vmin);
+  color: white;
+}
+
+.App-header>div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.App-header>div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 50px;
+}
+
+/* .Image {
+  width: 50px;
+  height: 50px;
+}
+
+.App-Records {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-Records>h2,
+.App-Records>p {
+  margin: 10px auto;
+  width: 1100px;
+} */
+
+h2 {
+  margin: 20px auto;
+  width: 500px;
+}
+
+table {
+  table-layout: fixed;
+  margin: 0px auto;
+  width: 500px;
+  border-collapse: collapse;
+  font-size: 1.2em;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 2px solid purple;
+}
+
+h4 {
+  height: 30px;
+  margin: 0px;
+}
+
+button {
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+form {
+  margin: 20px auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-weight: bold;
+  font-size: calc(5px + 2vmin);
+}
+
+form>div>input {
+  width: 75%;
+  font-weight: bold;
+  font-size: calc(5px + 2vmin);
+}
+
+form>button {
+  width: 100px;
+  height: 35px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgba(43, 120, 228, 255);
+  color: white;
+  font-size: 1.2em;
+}
+
+/* 
+.Cancel {
+  width: 260px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: lightslategray;
+  color: white;
+  font-size: 1.5em;
+}
+
+.Wrap {
+  margin: 0px auto;
+}
+
+.Left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Right {
+  width: 38%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Right>* {
+  margin: 20px;
+}
+
+.Input>input {
+  width: 90%;
+  height: 25px;
+  font-size: calc(3px + 2vmin);
+}
+
+.Error {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.Selector {
+  font-weight: bold;
+  font-size: calc(5px + 2vmin);
+}
+
+.Remove {
+  background-color: rgba(207, 42, 39, 255);
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 2%;
+}
+
+.Navigation {
+  height: 50px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.Name {
+  font-weight: bold;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form>h2 {
+  margin: 20px auto;
+} */
